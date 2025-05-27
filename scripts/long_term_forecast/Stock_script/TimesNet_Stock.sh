@@ -1,3 +1,4 @@
+export CUDA_VISIBLE_DEVICES=0
 model_name=TimesNet
 
 # seq_len: How many past points to use for prediction, default is 96, set it to 32 to run in my machine
