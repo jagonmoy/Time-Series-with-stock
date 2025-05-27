@@ -11,9 +11,13 @@ if you don't have SSH key, you can clone the repository using the following comm
 ```bash
 git clone https://github.com/jagonmoy/Time-Series-with-stock.git
 ```
+## Step 2: Checkout to the appropriate branch
 
+```bash
+git checkout add-stock-price-data-loader-and-script
+```
 
-## Step 2: Install the dependencies
+## Step 3: Install the dependencies
 
 Please be careful about the torch version which needs to be compatible with the version of CUDA/GPU installed in your machine. For me the the working torch version is 2.4.1+cu118. So, I have update the requirements.txt file with the compatible torch version of mine.
 <br><br>
@@ -22,7 +26,7 @@ So, please update the requirements.txt file with the compatible torch version. t
 pip install -r requirements.txt
 ```
 
-## Step 3 : Download the data and put it in the dataset folder
+## Step 4 : Download the data and put it in the dataset folder
 
 Download the data from the following link:
 https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
@@ -30,7 +34,7 @@ https://www.kaggle.com/datasets/paultimothymooney/stock-market-data
 Download the data and put it in a folder named **"dataset"** in the root directory.
 
 
-## Step 4: Evaluate the Script before running it
+## Step 5: Evaluate the Script before running it
 
 - Please change the variable **CUDA_VISIBLE_DEVICES** in the script to the GPU number you want to use. For example, if you want to use the GPU number 0, you can set it to **export CUDA_VISIBLE_DEVICES=0**
 <br><br>
