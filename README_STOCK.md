@@ -47,6 +47,20 @@ bash scripts/long_term_forecast/Stock_script/TimesNet_Stock.sh
 ## Step 5: Check the result
 result will be save in the **test_results** folder, **results** folder, **results_long_term_forecast.txt** file. you will also find a **checkpoints** folder after the training is complete. 
 
+## What changes I have made in the original code ? 
+- I have created a file named **stock_market.py** in the **data_provider** folder to load the data and process the data. 
+
+- I have introduced a snippet of code in the **data_provider/data_factory.py** file which is from **line 66 to line 102** to call the **stock_market.py** file to load the data. 
+
+- The script is under the folder **scripts/long_term_forecast/Stock_script**.  You might have already noticed that from the script command. 
+
+- As I have mentioned earlier I have changed the requirements.txt file to make the torch version compatible with the version of CUDA/GPU installed in my machine. 
+
+
+Please let me know if you have any difficulty in running the script or setting up the environment. 
+
+
+
 
 
 
